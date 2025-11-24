@@ -4,10 +4,11 @@ import { Project, SkillCategory, Achievement, SocialLink, Testimonial } from './
 export const PERSONAL_INFO = {
   name: "Yash Pandav",
   role: "AI Engineer",
+  roleSecondary: "Full Stack Developer",
   location: "Surat, Gujarat, India",
   email: "pandavyash076@gmail.com",
   terminalIntro: {
-    cmd: "> npx create-next-app@latest",
+    cmd: "> npm run dev",
     response: "Initializing Project... Setup complete. Specializing in scalable full-stack architecture and AI integration.",
     tagline: "Building scalable applications and AI-powered solutions that turn ideas into reality.",
     latency_humor: "O(1) complexity preferred"
@@ -68,8 +69,9 @@ export const PROJECTS: Project[] = [
     title: "TechieBlog",
     date: "March 2025",
     description: [
-      "Open-source contribution to a blogging platform built with React and Appwrite backend.",
-      "Implemented features like user authentication, posts CRUD, media uploads, responsive UI and Docker setup."
+      "A clean and modern open - source blogging platform powered by Appwrite and Next.js.",
+      "Built end - to - end authentication, markdown publishing, media uploads, and a dynamic editor — all wrapped in a fast, minimal UI.",
+      "Focused on improving DX by contributing optimizations, setup, and scalable architecture."
     ],
     tech: ["Next.js", "Express.js", "Tailwind CSS", "Appwrite", "Docker", "JavaScript"],
     links: {
@@ -83,8 +85,9 @@ export const PROJECTS: Project[] = [
     title: "AI-SafeQuery",
     date: "September 2025",
     description: [
-      "MVP of a secure natural-language + SQL query interface with role-based access and immutable audit logs (blockchain style).",
-      "Built using FastAPI backend, React frontend, AI guardrails for safety, PostgreSQL, and blockchain logging for query tracking."
+      "A secure natural-language SQL assistant designed for teams working with sensitive data and internal dashboards.",
+      "Converts English queries into safe, permission-aware SQL using FastAPI guardrails, role-based access, and immutable blockchain-style logs.",
+      "Built during HackOdisha with a focus on speed, safety, and enterprise-grade reliability — delivering a smooth, intelligent query experience."
     ],
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "FastAPI", "PostgreSQL", "LangChain", "Mastra"],
     links: {
@@ -98,8 +101,9 @@ export const PROJECTS: Project[] = [
     title: "TeaCoder Agent - AI Coding Assistant",
     date: "May 2025",
     description: [
-      "Terminal-based AI coding assistant that analyzes project files, generates/modifies code and executes shell commands.",
-      "Built with Python, uses Google Gemini API for code generation and a tool-chain for file/command operations."
+      "A terminal - native AI coding companion that edits, generates, and executes code like a mini Cursor.",
+      "Scans entire projects, rewrites files, runs shell commands, and maintains reasoning context using Gemini 1.5 Flash.",
+      "Designed for speed, automation, and a coder- first workflow — perfect for rapid prototyping from your terminal."
     ],
     tech: ["Python", "Google Gemini API", "Terminal UI", "Code Generation", "Shell Automation"],
     links: {
@@ -113,8 +117,9 @@ export const PROJECTS: Project[] = [
     title: "AutoMission Bot - HR Assistant",
     date: "June 2025",
     description: [
-      "RAG-based HR assistant automating 80% of manual queries using vector retrieval.",
-      "Ranked Top 8 globally in Langflow Challenge."
+      "A smart HR automation agent that answers employee queries with sub - second vector - retrieval accuracy.",
+      "Reduces manual workload by nearly 80 % through RAG pipelines, structured memory, and dynamic tool - calling.",
+      "Achieved Top 8 global ranking in the official LangFlow AI Challenge."
     ],
     tech: ["LangFlow", "LangChain", "RAG", "Vector DB", "Gemini API"],
     links: { demo: "https://youtu.be/k9CrXuwjglw" },
@@ -125,8 +130,9 @@ export const PROJECTS: Project[] = [
     title: "Book Review Platform",
     date: "September 2025",
     description: [
-      "Full-stack MERN book review system with user signup/login, book CRUD, review system and rating visualization.",
-      "Features search, filter, pagination, dynamic rating charts (Recharts), responsive UI and RESTful API."
+      "A full - stack MERN platform for discovering, reviewing, and organizing books with an intuitive rating system.",
+      "Features real - time reviews, pagination, search filters, JWT authentication, and interactive rating charts.",
+      "Built with a focus on clean UX, responsive layouts, and a robust REST API layer."
     ],
     tech: ["Node.js", "Express.js", "MongoDB", "React.js", "Tailwind CSS", "JWT Authentication"],
     links: {
@@ -140,9 +146,9 @@ export const PROJECTS: Project[] = [
     title: "Portfolio",
     date: "November 2025",
     description: [
-      "A high-performance personal portfolio built with React, Tailwind CSS, and Google Gemini.",
-      "Features a custom AI Chat Agent for interactive queries, a cinematic system-boot preloader, and a premium Vercel-inspired aesthetic.",
-      "Optimized for performance with custom cursors, reveal animations, and responsive design."
+      "A high - performance personal portfolio built with React, Tailwind CSS, and Google Gemini.",
+      "Features a custom AI chat agent, a cinematic system - boot preloader, and a premium Vercel - inspired UI.",
+      "Enhanced with micro - interactions, custom cursors, smooth reveal animations, and full mobile responsiveness."
     ],
     tech: ["Next Js", "Tailwind CSS", "Google Gemini API", "Framer Motion", "TypeScript"],
     links: {
@@ -156,8 +162,9 @@ export const PROJECTS: Project[] = [
     title: "Circle LMS",
     date: "November 2024",
     description: [
-      "Classroom management system inspired by Google Classroom: supports assignments, grading logic, role-based dashboards for teachers/students.",
-      "Full-stack build using React, Node.js and MongoDB, with roles/permissions, submission workflows and scalable architecture."
+      "A Google - Classroom - style learning platform for managing assignments, submissions, and grading.",
+      "Role - based dashboards for teachers and students, automated evaluation workflows, and a scalable MERN backend.",
+      "Designed with clean UI, reliable state management, and real - world classroom - friendly usability."
     ],
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Role-based Access"],
     links: {

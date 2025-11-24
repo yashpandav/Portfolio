@@ -30,9 +30,17 @@ const Hero: React.FC<HeroProps> = ({ onOpenChat }) => {
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]">
                 {PERSONAL_INFO.name}
               </h1>
-              <p className="text-zinc-500 text-3xl md:text-4xl mt-3 pl-2 font-medium tracking-normal">
-                {PERSONAL_INFO.role}
-              </p>
+              <div className="mt-4 pl-2 flex flex-col gap-2">
+                <div className="flex flex-col [@media(min-width:470px)]:flex-row [@media(min-width:470px)]:items-center gap-2 [@media(min-width:470px)]:gap-3 [@media(min-width:1022px)]:flex-col [@media(min-width:1022px)]:items-start [@media(min-width:1022px)]:gap-1 [@media(min-width:1134px)]:flex-row [@media(min-width:1134px)]:items-center [@media(min-width:1134px)]:gap-3">
+                  <p className="text-2xl md:text-3xl font-medium text-zinc-500 whitespace-nowrap">
+                    {PERSONAL_INFO.role}
+                  </p>
+                  <span className="text-zinc-700 text-xl hidden [@media(min-width:470px)]:inline [@media(min-width:1022px)]:hidden [@media(min-width:1134px)]:inline">&</span>
+                  <p className="text-2xl md:text-3xl font-medium text-zinc-500 whitespace-nowrap">
+                    {PERSONAL_INFO.roleSecondary}
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="opacity-0 animate-slide-up max-w-lg pl-2" style={{ animationDelay: '0.2s' }}>
@@ -41,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenChat }) => {
               </p>
             </div>
 
-            <div className="opacity-0 flex flex-col [@media(min-width:470px)]:flex-row gap-3 [@media(min-width:470px)]:gap-4 animate-slide-up pt-2" style={{ animationDelay: '0.3s' }}>
+            <div className="opacity-0 flex flex-col [@media(min-width:470px)]:flex-row gap-3 [@media(min-width:470px)]:gap-4 animate-slide-up pt-2 pl-2" style={{ animationDelay: '0.3s' }}>
               <a
                 href="#contact"
                 className="group px-6 py-3.5 bg-white text-black rounded-lg text-sm font-semibold hover:bg-zinc-200 transition-all flex items-center gap-2 shadow-[0_0_20px_-5px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_-5px_rgba(255,255,255,0.4)]"
@@ -65,7 +73,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenChat }) => {
           {/* Right: MagicUI Terminal */}
           <div className="w-full opacity-0 animate-fade-in [animation-fill-mode:forwards] [animation-delay:0.5s]">
             <Terminal className="min-h-[430px]">
-              <TypingAnimation delay={500}>&gt; npm run build:production</TypingAnimation>
+              <TypingAnimation delay={500}>&gt; npm run dev</TypingAnimation>
 
               <AnimatedSpan delay={2000} className="text-emerald-500">
                 <Check className="w-3.5 h-3.5 shrink-0" />

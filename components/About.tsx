@@ -47,7 +47,7 @@ const About: React.FC = () => {
                 )}
 
                 {/* Overlay Scan effect - purely decorative */}
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_50%,rgba(0,0,0,0.2)_50%)] bg-[length:100%_4px] pointer-events-none opacity-20"></div>
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_50%,rgba(0,0,0,0.2)_50%)] bg-[length:100%_4px] pointer-events-none opacity-20 group-hover:opacity-0 transition-opacity duration-500"></div>
               </div>
             </div>
           </div>

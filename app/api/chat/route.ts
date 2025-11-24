@@ -48,12 +48,10 @@ ${JSON.stringify(SOCIALS, null, 2)}
 ${JSON.stringify(TESTIMONIALS.map(t => ({ name: t.name, role: t.role, text: t.text })), null, 2)}
 `;
 
-// Initialize AI on server side - API key is SECURE
 const ai = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY!
 });
 
-// Store chat sessions in memory (for demo - use Redis/DB in production)
 const chatSessions = new Map();
 
 export async function POST(request: NextRequest) {
@@ -67,11 +65,45 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Get or create chat session
+        const guardrailPrompt = `
+        You are a strict Guardrail Agent for Yash Pandav's portfolio website.
+        Your task is to analyze the User's Message and determine if it is relevant.
+
+        **Allowed Topics:**
+        1. Yash Pandav (his skills, projects, experience, resume, contact info, etc.)
+        2. Software Engineering, AI, Web Development, Tech Stack, Coding.
+        3. Professional greetings (Hi, Hello, Good morning).
+
+        **Forbidden Topics:**
+        - General world knowledge (e.g., "Who is the president?", "How to cook pasta?")
+        - Politics, Religion, Entertainment, Movies.
+        - Anything unrelated to a professional portfolio context.
+
+        **Instructions:**
+        - If the message is ALLOWED, output exactly: "ALLOWED"
+        - If the message is FORBIDDEN, output a polite, professional refusal message. Example: "I am an AI assistant dedicated to Yash's portfolio. I can only answer questions related to his professional work, skills, and projects."
+
+        User Message: "${message}"
+        `;
+
+        const guardrailResponse = await ai.models.generateContent({
+            model: 'gemini-2.0-flash',
+            contents: [{ role: 'user', parts: [{ text: guardrailPrompt }] }]
+        });
+
+        const guardrailDecision = guardrailResponse.text?.trim();
+
+        if (guardrailDecision && guardrailDecision !== 'ALLOWED') {
+            return NextResponse.json({
+                response: guardrailDecision,
+                sessionId
+            });
+        }
+
         let chat = chatSessions.get(sessionId);
         if (!chat) {
             chat = ai.chats.create({
-                model: 'gemini-2.5-flash-lite',
+                model: 'gemini-2.0-flash',
                 config: {
                     systemInstruction: SYSTEM_PROMPT,
                 },
@@ -79,7 +111,6 @@ export async function POST(request: NextRequest) {
             chatSessions.set(sessionId, chat);
         }
 
-        // Send message and get response
         const result = await chat.sendMessage({ message });
         const responseText = result.text || "I couldn't generate a response.";
 
