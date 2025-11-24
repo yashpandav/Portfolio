@@ -1,7 +1,5 @@
 # Yash Pandav | AI Engineer & Full Stack Developer Portfolio
 
-![Portfolio Preview](public/og-image.png)
-
 A high-performance, interactive personal portfolio website built with **Next.js 15 (App Router)**, **TypeScript**, and **Tailwind CSS**. This project showcases my skills, projects, and experience as an AI Engineer and Full Stack Developer, featuring a secure, custom-built **AI Chat Agent** powered by Google Gemini.
 
 ## 🚀 Features
@@ -87,22 +85,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 └── ...
 ```
 
-## 🚢 Deployment
-
-The easiest way to deploy this Next.js app is to use the [Vercel Platform](https://vercel.com/new).
-
-1.  Push your code to a GitHub repository.
-2.  Import the project into Vercel.
-3.  **Crucial Step**: In the Vercel project settings, add the `GEMINI_API_KEY` environment variable.
-4.  Click **Deploy**.
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📬 Contact
 
--   **Website**: [yashpandav.dev](https://yashpandav.dev)
+-   **Website**: ```to be added```
 -   **Email**: [pandavyash076@gmail.com](mailto:pandavyash076@gmail.com)
 -   **LinkedIn**: [Yash Pandav](https://www.linkedin.com/in/yash-pandav/)
 -   **GitHub**: [@yashpandav](https://github.com/yashpandav)
