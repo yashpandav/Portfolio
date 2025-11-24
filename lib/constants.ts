@@ -184,6 +184,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     title: "Open Source Winner",
     description: "Winner of Social Winter of Code (Season 5) & Innogeeks Winter of Code",
+    image: "/Oken.png",
   },
   {
     title: "Hackathon Victor",
@@ -200,7 +201,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Oken Keithellakpam",
     role: "Project Maintainer",
     company: "React Blog (SWOC/IWOC)",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQGEdrMNR_9wBQ/profile-displayphoto-scale_200_200/B56ZfU9UQ4GoAY-/0/1751624535238?e=1765411200&v=beta&t=vzGW44i9TQl7j_cvrO3roWgz1Fu90ESFhAGQ9TxMXBc",
+    image: "/Oken.png",
     text: "I want to highlight Yash, one of the key contributors to my React Blog open-source project. Yash made more than 40+ meaningful contributions, ranging from adding significant features to improving existing functionality and addressing important issues. Throughout the process, he was hig hly professional, reliable, and always easy to communicate with. His dedication and technical expertise played a major role in the growth of the project. Yash is an excellent developer with a strong sense of collaboration, and I'm confident he will continue to grow and achieve even greater milestones in his career.",
     linkedin: "https://www.linkedin.com/in/okenk/"
   }
