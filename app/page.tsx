@@ -9,6 +9,7 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import { Preloader } from '@/components/Preloader';
 import { RevealOnScroll } from '@/components/RevealOnScroll';
+import { Analytics } from "@vercel/analytics/next"
 
 // Lazy‑load heavy components
 const Projects = dynamic(() => import('@/components/Projects'), {
@@ -89,6 +90,7 @@ export default function Home() {
         <div className="relative min-h-screen bg-zinc-950 text-zinc-100 overflow-x-hidden">
             {/* Custom cursor – client‑only */}
             <CustomCursor />
+            <Analytics />
 
             {isLoading ? (
                 <Preloader onComplete={() => setIsLoading(false)} />
