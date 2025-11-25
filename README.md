@@ -91,7 +91,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 
--   **Website**: ```to be added```
--   **Email**: [pandavyash076@gmail.com](mailto:pandavyash076@gmail.com)
+-   **Website**: [https://www.yashpandav.dev/](https://www.yashpandav.dev/)
+-   **Email**: [contact@yashpandav.dev](mailto:contact@yashpandav.dev)
 -   **LinkedIn**: [Yash Pandav](https://www.linkedin.com/in/yash-pandav/)
 -   **GitHub**: [@yashpandav](https://github.com/yashpandav)
