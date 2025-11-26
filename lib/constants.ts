@@ -215,5 +215,5 @@ export const SOCIALS: SocialLink[] = [
   { name: "Dev.to", url: "https://dev.to/yashpandav", icon: "Code2" },
   { name: "Hashnode", url: "https://hashnode.com/@yashpandav", icon: "Hash" },
   { name: "Peerlist", url: "https://peerlist.io/yashpandav", icon: "Globe" },
-  { name: "Email", url: "mailto:pandavyash076@gmail.com", icon: "Mail" },
+  { name: "Email", url: "mailto:contact@yashpandav.dev", icon: "Mail" },
 ];
