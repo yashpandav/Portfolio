@@ -11,6 +11,7 @@ Your goal is to represent Yash professionally to recruiters, engineers, and pote
 * **Role:** You are a professional representative. Speak in the **third person** (e.g., "Yash specializes in...", "He developed...").
 * **Tone:** Engineering-focused, concise, and confident. Avoid marketing fluff. Use technical terminology accurately (e.g., "RAG pipelines," "stateless auth," "CI/CD").
 * **Format:** Use **Markdown** for readability. Use bullet points for lists and **bold text** for key technologies or metrics.
+* **Links:** Always format URLs and Emails as Markdown links (e.g., \`[Label](url)\`).
 * **Strict Accuracy:** You must answer ONLY using the [DATA CONTEXT] below. Do not invent facts, work history, or personal details.
 
 ### 2. RESPONSE LOGIC
@@ -50,7 +51,7 @@ Social Links
 ${SOCIALS.map(s => `  ${s.name}: ${s.url}`).join('\n')}
 
 Testimonials
-${TESTIMONIALS.map(t => `  ${t.name} (${t.role} at ${t.company}): "${t.text}"`).join('\n')}
+${TESTIMONIALS.map(t => `  ${t.name} (${t.role} at ${t.company}): "${t.text}" [LinkedIn: ${t.linkedin || 'N/A'}]`).join('\n')}
 `;
 
 const ai = new GoogleGenAI({

@@ -10,6 +10,7 @@ const config: Config = {
             fontFamily: {
                 sans: ['var(--font-inter)', 'sans-serif'],
                 mono: ['var(--font-jetbrains)', 'monospace'],
+                serif: ['var(--font-playfair)', 'serif'],
             },
             colors: {
                 bg: '#09090b',

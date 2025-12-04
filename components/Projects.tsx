@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
         {/* Vertical List Layout */}
         <div className="flex flex-col gap-8">
           {PROJECTS.map((project, index) => (
-            <RevealOnScroll key={index} delay={index * 50} variant="fade-up">
+            <RevealOnScroll key={index} variant="fade-up">
               <ProjectCard project={project} />
             </RevealOnScroll>
           ))}

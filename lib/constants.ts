@@ -204,6 +204,14 @@ export const TESTIMONIALS: Testimonial[] = [
     image: "/Oken.png",
     text: "I want to highlight Yash, one of the key contributors to my React Blog open-source project. Yash made more than 40+ meaningful contributions, ranging from adding significant features to improving existing functionality and addressing important issues. Throughout the process, he was highly professional, reliable, and always easy to communicate with. His dedication and technical expertise played a major role in the growth of the project. Yash is an excellent developer with a strong sense of collaboration, and I'm confident he will continue to grow and achieve even greater milestones in his career.",
     linkedin: "https://www.linkedin.com/in/okenk/"
+  },
+  {
+    name: "Anwishta Ghosh",
+    role: "Mentor (SWOC 2025)",
+    company: "Social Winter of Code",
+    image: "./Anwishta.jpeg",
+    text: "I had the pleasure of mentoring Yash during SWOC 2025, and I was consistently impressed by his dedication, technical depth, and eagerness to learn. He quickly grasped complex concepts, contributed high-quality code, and showed strong problem-solving skills throughout the program. His proactive attitude, attention to detail, and ability to collaborate effectively make him stand out. I'm confident he will excel in any role he pursues, and I highly recommend him.",
+    linkedin: "https://www.linkedin.com/in/anwishta-ghosh/"
   }
 ];
 
