@@ -1,6 +1,6 @@
 import { GoogleGenAI } from '@google/genai';
 import { NextRequest, NextResponse } from 'next/server';
-import { PERSONAL_INFO, SKILLS, PROJECTS, ACHIEVEMENTS, ABOUT, TESTIMONIALS, SOCIALS } from '@/lib/constants';
+import { PERSONAL_INFO, SKILLS, PROJECTS, ACHIEVEMENTS, ABOUT, TESTIMONIALS, SOCIALS, EDUCATION } from '@/lib/constants';
 
 // Construct the system prompt from portfolio data
 const SYSTEM_PROMPT = `
@@ -49,6 +49,12 @@ ${ACHIEVEMENTS.map(a => `  ${a.title}: ${a.description}`).join('\n')}
 
 Social Links
 ${SOCIALS.map(s => `  ${s.name}: ${s.url}`).join('\n')}
+
+
+Education
+${EDUCATION.map(e => `  ${e.degree} at ${e.school} (${e.duration})
+    Location: ${e.location || 'N/A'}
+    Grades: ${e.grades || 'N/A'}`).join('\n')}
 
 Testimonials
 ${TESTIMONIALS.map(t => `  ${t.name} (${t.role} at ${t.company}): "${t.text}" [LinkedIn: ${t.linkedin || 'N/A'}]`).join('\n')}

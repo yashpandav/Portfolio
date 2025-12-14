@@ -38,3 +38,11 @@ export interface Testimonial {
   text: string;
   linkedin: string;
 }
+
+export interface Education {
+  school: string;
+  degree: string;
+  duration: string;
+  location?: string;
+  grades?: string;
+}

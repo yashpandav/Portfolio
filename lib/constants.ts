@@ -1,5 +1,6 @@
 
-import { Project, SkillCategory, Achievement, SocialLink, Testimonial } from './types';
+import { Project, SkillCategory, Achievement, SocialLink, Testimonial, Education } from './types';
+
 export const PERSONAL_INFO = {
   name: "Yash Pandav",
   role: "AI Engineer",
@@ -64,7 +65,6 @@ export const SKILLS: SkillCategory[] = [
 ];
 
 export const PROJECTS: Project[] = [
-
   {
     title: "TechieBlog",
     date: "March 2025",
@@ -175,7 +175,6 @@ export const PROJECTS: Project[] = [
   }
 ];
 
-
 export const ACHIEVEMENTS: Achievement[] = [
   {
     title: "Global Rank 8",
@@ -212,6 +211,22 @@ export const TESTIMONIALS: Testimonial[] = [
     image: "./Anwishta.jpeg",
     text: "I had the pleasure of mentoring Yash during SWOC 2025, and I was consistently impressed by his dedication, technical depth, and eagerness to learn. He quickly grasped complex concepts, contributed high-quality code, and showed strong problem-solving skills throughout the program. His proactive attitude, attention to detail, and ability to collaborate effectively make him stand out. I'm confident he will excel in any role he pursues, and I highly recommend him.",
     linkedin: "https://www.linkedin.com/in/anwishta-ghosh/"
+  }
+];
+
+export const EDUCATION: Education[] = [
+  {
+    school: "Veer Narmad South Gujarat University",
+    degree: "Bachelor of Science in Information and Technology",
+    duration: "July 2023 — Current",
+    location: "Surat, Gujarat",
+    grades: "8.64, 8.18, 8.27, 8.18"
+  },
+  {
+    school: "Sarvajanik Vidhya Mandir",
+    degree: "High School",
+    duration: "March - 2023",
+    grades: "12th – 92.93% || 10th – 92.00%"
   }
 ];
 
