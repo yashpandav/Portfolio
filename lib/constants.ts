@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   roleSecondary: "Full Stack Developer",
   location: "Surat, Gujarat, India",
   email: "contact@yashpandav.dev",
-  resume: "https://drive.google.com/file/d/1LiJPlb8OvMAimUihFTTWkbmjFwySdy4u/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1xq6-83jdWkrOTpY2PksBAXoTkwsObU6Q/view?usp=sharing",
   terminalIntro: {
     cmd: "> npm run dev",
     response: "Initializing Project... Setup complete. Specializing in scalable full-stack architecture and AI integration.",
