@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     },
     manifest: '/manifest.webmanifest',
     verification: {
-        google: 'your-google-verification-code', // TODO: Add actual verification code
+        google: '7SxcK5iEk8l_G60DuaynW4XnurguAbLff52othYyJXo',
     },
     icons: {
         icon: '/favicon.png',
