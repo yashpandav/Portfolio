@@ -65,6 +65,21 @@ export const SKILLS: SkillCategory[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "Wealth Management CRM",
+    date: "April 2026",
+    description: [
+      "An enterprise-grade Wealth Management CRM built for Emdee Ventures to oversee client portfolios, customized investment plans, and multi-role operational workflows.",
+      "Automates the entire investment lifecycle—from lead onboarding and KYC verification to processing purchase requests, signing contracts, and scheduling recurring interest payouts.",
+      "Architected for financial compliance with strict Role-Based Access Control (RBAC), a 7-year immutable audit trail, and secure document storage — deployed on AWS Elastic Beanstalk."
+    ],
+    tech: ["Next.js", "PostgreSQL", "Prisma", "TypeScript", "Tailwind CSS", "AWS", "Docker"],
+    links: {
+      demo: "http://investment-mangement-env.eba-dxkbr8aq.us-east-1.elasticbeanstalk.com/"
+    },
+    featured: true,
+    image: "https://placehold.co/800x450/18181b/a1a1aa/png?text=Wealth+Management+CRM"
+  },
+  {
     title: "TechieBlog",
     date: "March 2025",
     description: [
@@ -124,22 +139,6 @@ export const PROJECTS: Project[] = [
     links: { demo: "https://youtu.be/k9CrXuwjglw" },
     featured: true,
     image: "https://placehold.co/800x450/18181b/a1a1aa/png?text=AutoMission+Bot"
-  },
-  {
-    title: "Book Review Platform",
-    date: "September 2025",
-    description: [
-      "A full-stack MERN platform where readers discover, rate, and review books — with real-time interactions and a polished, responsive interface.",
-      "Features JWT authentication, smart search filters, paginated results, and interactive rating charts that make data feel alive.",
-      "Built API-first with a clean REST layer and component-driven frontend that scales without breaking."
-    ],
-    tech: ["Node.js", "Express.js", "MongoDB", "React.js", "Tailwind CSS", "JWT Authentication"],
-    links: {
-      demo: "https://book-review-platform-sigma.vercel.app/",
-      code: "https://github.com/yashpandav/Book-Review-Platform"
-    },
-    featured: true,
-    image: "https://placehold.co/800x450/18181b/a1a1aa/png?text=Book+Review+Platform"
   },
   {
     title: "Portfolio",
