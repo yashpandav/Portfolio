@@ -20,6 +20,7 @@ const playfair = Playfair_Display({
     display: 'swap',
 });
 
+
 export const metadata: Metadata = {
     metadataBase: new URL('https://yashpandav.dev'),
     title: {

@@ -12,6 +12,9 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Lazy‑load heavy components
+const Experience = dynamic(() => import('@/components/Experience'), {
+    loading: () => <div className="min-h-[400px]" />,
+});
 const Projects = dynamic(() => import('@/components/Projects'), {
     loading: () => <div className="min-h-screen" />,
 });
@@ -93,6 +96,7 @@ export default function Home() {
                 <main className="space-y-0">
                     <Hero onOpenChat={() => setIsChatOpen(true)} />
                     <RevealOnScroll variant="blur-in"><About /></RevealOnScroll>
+                    <RevealOnScroll variant="fade-up"><Experience /></RevealOnScroll>
                     <RevealOnScroll variant="slide-right"><Skills /></RevealOnScroll>
                     <RevealOnScroll variant="blur-in"><Projects /></RevealOnScroll>
                     <RevealOnScroll variant="slide-left"><Achievements /></RevealOnScroll>

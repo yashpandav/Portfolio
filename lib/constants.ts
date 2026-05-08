@@ -1,4 +1,4 @@
-import { Project, SkillCategory, Achievement, SocialLink, Testimonial, Education } from './types';
+import { Project, SkillCategory, Achievement, SocialLink, Testimonial, Education, Experience } from './types';
 
 export const PERSONAL_INFO = {
   name: "Yash Pandav",
@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   roleSecondary: "Full Stack Developer",
   location: "Surat, Gujarat, India",
   email: "contact@yashpandav.dev",
-  resume: "https://drive.google.com/file/d/1xq6-83jdWkrOTpY2PksBAXoTkwsObU6Q/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1_4qC6N8WlRoVSG4qdbCS9jg5LNT5GOZn/view?usp=sharing",
   terminalIntro: {
     cmd: "> npm run dev",
     response: "Bootstrapping Yash Pandav... Full-stack systems online. AI modules loaded. Ready to ship.",
@@ -225,6 +225,26 @@ export const EDUCATION: Education[] = [
     degree: "Higher Secondary Education",
     duration: "Completed March 2023",
     grades: "12th — 92.93%   ·   10th — 92.00%"
+  }
+];
+
+export const EXPERIENCE: Experience[] = [
+  {
+    company: "Sakayanagi Research Private Limited",
+    role: "Full Stack Web Developer Intern",
+    department: "Product Engineering",
+    domain: "Investment Wealth Management CRM Platform",
+    duration: "October 2025 — April 2026",
+    mode: "Remote",
+    type: "internship",
+    current: false,
+    description: [
+      "Architected and deployed the Investment Wealth Management CRM Platform end-to-end — engineered for financial compliance with strict RBAC, a 7-year immutable audit trail, and secure document storage on AWS Elastic Beanstalk.",
+      "Built full-stack features across Next.js frontend and PostgreSQL/Prisma backend, automating the entire investment lifecycle: lead onboarding, KYC verification, purchase request flows, contract signing, and recurring interest payouts.",
+      "Collaborated with product and design teams to implement new features and improve existing functionality; actively participated in code reviews, testing, and deployment pipelines.",
+      "Contributed to architectural decisions and technical documentation; containerized the application with Docker and managed production deployments reporting directly to the CTO.",
+    ],
+    tech: ["Next.js", "PostgreSQL", "Prisma", "TypeScript", "Tailwind CSS", "AWS Elastic Beanstalk", "Docker"],
   }
 ];
 

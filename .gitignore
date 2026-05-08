@@ -38,6 +38,9 @@ dist-ssr
 *.sln
 *.sw?
 
+.agents
+.claude
+
 # OS
 Thumbs.db
 

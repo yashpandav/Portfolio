@@ -46,3 +46,16 @@ export interface Education {
   location?: string;
   grades?: string;
 }
+
+export interface Experience {
+  company: string;
+  role: string;
+  department: string;
+  domain: string;
+  duration: string;
+  mode: string;
+  type: 'internship' | 'full-time' | 'contract' | 'part-time';
+  current: boolean;
+  description: string[];
+  tech: string[];
+}
